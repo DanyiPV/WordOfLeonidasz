@@ -61,7 +61,6 @@ exports.registerUser = async (req, res, next) =>
     }
 }
 
-
 exports.loginUser = async (req, res, next) =>
 {
     const { email, password } = req.query;

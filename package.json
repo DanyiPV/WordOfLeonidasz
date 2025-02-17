@@ -1,0 +1,43 @@
+{
+  "name": "word_of_leonidasz",
+  "version": "1.0.0",
+  "description": "word_of_leonidasz",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MozesBence/matekos_leetcode.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MozesBence/matekos_leetcode/issues"
+  },
+  "homepage": "https://github.com/MozesBence/matekos_leetcode#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "image-type": "^5.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.5",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.16",
+    "sequelize": "^6.37.5",
+    "vue3-apexcharts": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.15",
+    "concurrently": "^9.1.0",
+    "email-validator": "^2.0.4",
+    "install": "^0.13.0",
+    "nodemon": "^3.1.7",
+    "npm": "^11.1.0"
+  }
+}

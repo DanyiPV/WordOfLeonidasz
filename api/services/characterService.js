@@ -11,6 +11,10 @@ class characterService
     {
         return await characterRepository.getCharacters(id);
     }
+
+    async characterCodeCheck(code){
+        return await characterRepository.characterCodeCheck(code);
+    }
 }
 
 module.exports = new characterService();

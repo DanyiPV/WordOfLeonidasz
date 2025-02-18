@@ -29,6 +29,15 @@ class characterRepository
         return Characters;
     }
 
+    async characterCodeCheck(code){
+        const Characters = await this.Characters.findOne({
+            where:{
+                character_code: code
+            }
+        });
+        
+        return Characters;
+    }
 }
 
 module.exports = new characterRepository(db);

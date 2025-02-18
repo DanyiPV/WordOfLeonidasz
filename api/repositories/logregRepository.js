@@ -1,6 +1,6 @@
 const db = require("../database/dbContext");
 
-const { Op } = require('sequelize');
+const { Op, where } = require('sequelize');
 
 const { Sequelize, DataTypes } = require('sequelize');
 
@@ -40,14 +40,9 @@ class logregRepository
 
     async getUser(email)
     {
-        return await this.Users.findOne
-        (
-            {
-                [Op.or]: [
-                    { email: email },
-                ]
-            }
-        )
+        return await this.Users.findOne({
+            where: { email: email }
+        });
     }
 }
 
